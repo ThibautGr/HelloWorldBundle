@@ -1,7 +1,7 @@
 {
   "name": "tgn/hello-world-bundle",
   "description": "This is a test bundle, an hello world bundle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "type": "symfony-bundle",
   "authors": [
@@ -21,7 +21,7 @@
     }
   },
   "require": {
-    "php": ">=8.3",
+    "php": ">=8.2",
     "another-vendor/package": "1.*",
     "symfony/symfony": "6.4.*"
   }
