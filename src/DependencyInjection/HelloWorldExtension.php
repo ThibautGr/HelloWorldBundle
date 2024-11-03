@@ -16,7 +16,7 @@ class HelloWorldExtension extends Extension
 
         $container->setParameter('hello_world.greeting_message', $config['greeting_message']);
 
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../config/packages'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../config'));
         $loader->load('services.yaml');
     }
 }
