@@ -1,6 +1,6 @@
 <?php
 
-namespace HelloWorldBundle;
+namespace TGN\HelloWorldBundle;
 
 class SayHelloService
 {
