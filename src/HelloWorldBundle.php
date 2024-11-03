@@ -2,9 +2,8 @@
 
 namespace HelloWorldBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
-
-class HelloWorldBundle extends Bundle
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+class HelloWorldBundle extends AbstractBundle
 {
 
 
