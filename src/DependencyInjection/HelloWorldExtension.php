@@ -5,9 +5,9 @@ namespace TGN\HelloWorldBundle\DependencyInjection;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Extension\ConfigurableExtension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 class HelloWorldExtension extends ConfigurableExtension
 {
@@ -15,9 +15,8 @@ class HelloWorldExtension extends ConfigurableExtension
     {
         // Enregistrer le paramètre dans le conteneur en utilisant la configuration fusionnée
         $container->setParameter('hello_world.greeting_message', $mergedConfig['greeting_message']);
-
         // Charger les services internes du bundle
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../resources'));
         $loader->load('services.yaml');
     }
 
