@@ -1,0 +1,7 @@
+# resources/config/services.yaml
+
+services:
+  Vendor\HelloWorldBundle\SayHello:
+    arguments:
+      $greetingMessage: '%hello_world.greeting_message%'
+    public: true
